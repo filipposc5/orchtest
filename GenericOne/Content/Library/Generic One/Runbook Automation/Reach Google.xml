@@ -70,7 +70,7 @@
       <scriptResultStep>false</scriptResultStep>
       <userPrompt></userPrompt>
       <bindings>
-        <userInputBinding id="2550b5e7-3f17-47a3-b68e-502e1ca0c9d3">
+        <staticBinding id="ee0245c4-19ec-464d-b174-5fbe884867bb">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
           <assignToContext>false</assignToContext>
@@ -80,11 +80,9 @@
           <isPersisted>true</isPersisted>
           <inputSymbol>url</inputSymbol>
           <listDelimiter>,</listDelimiter>
+          <value>https://www.google.com</value>
           <record>false</record>
-          <prompt></prompt>
-          <isMultiSelect>false</isMultiSelect>
-          <sourceDelimiter>|</sourceDelimiter>
-        </userInputBinding>
+        </staticBinding>
         <staticBinding id="39a07ac4-557f-4ad5-a393-679adeab9b9a">
           <annotation></annotation>
           <assignFromContext>false</assignFromContext>
@@ -499,7 +497,36 @@
       <opRef>
         <refId>3e4ddaf8-c20d-48b7-8f05-3dd74cac2643</refId>
       </opRef>
-      <assignments/>
+      <assignments>
+        <flowVariableAssignment id="55a4fc82-95fa-42fa-8dab-52db9c67c485">
+          <annotation></annotation>
+          <name>assignment</name>
+          <action>OVERWRITE</action>
+          <assignmentTargetType>FLOW_VARIABLE</assignmentTargetType>
+          <contextKey>resultText</contextKey>
+          <expression id="7da34f1c-7194-498a-9524-b7ed122321d5">
+            <annotation></annotation>
+            <name>Result Field: resultText</name>
+            <fieldName>resultText</fieldName>
+            <sourceType>RAWRESULT</sourceType>
+            <filters/>
+          </expression>
+        </flowVariableAssignment>
+        <flowVariableAssignment id="38a65a40-6eb2-48a1-a403-1b29dafae4a0">
+          <annotation></annotation>
+          <name>assignment</name>
+          <action>OVERWRITE</action>
+          <assignmentTargetType>FLOW_VARIABLE</assignmentTargetType>
+          <contextKey>document</contextKey>
+          <expression id="8fc28258-3711-4708-8f22-1c9043349498">
+            <annotation></annotation>
+            <name>Result Field: document</name>
+            <fieldName>document</fieldName>
+            <sourceType>RAWRESULT</sourceType>
+            <filters/>
+          </expression>
+        </flowVariableAssignment>
+      </assignments>
       <throttleSize>0</throttleSize>
     </step>
     <returnStep id="2019b3d2-ca81-4251-98c3-0094a8e0367b">
